@@ -1,0 +1,16 @@
+[package]
+name = "rentropy"
+version = "0.1.1"
+authors = ["Timm Behner <timm.behner@fkie.fraunhofer.de>"]
+edition = "2018"
+
+[lib]
+name = "rentropy"
+crate-type = ["cdylib"]
+
+[dependencies]
+entropy = "0.3.0"
+
+[dependencies.pyo3]
+version = "0.6.0-alpha.4"
+features = ["extension-module"]
