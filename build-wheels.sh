@@ -6,8 +6,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 cd /io
 
-
-
 for PYBIN in /opt/python/{cp35-cp35m,cp37-cp37m}/bin; do
     export PYTHON_SYS_EXECUTABLE="$PYBIN/python"
 
