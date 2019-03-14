@@ -6,7 +6,7 @@ with open("README.md") as readme:
 
 setup(
         name="rentropy",
-        version="0.1.2",
+        version="0.1.3",
         author="Timm Behner",
         author_email="timm.behner@fkie.fraunhofer.de",
         description="A small wrapper around a rust entropy crate",
