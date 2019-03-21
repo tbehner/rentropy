@@ -10,4 +10,4 @@ from .rentropy import _eta
 
 def eta(inp):
     """Computes the Shannon entropy of bytes."""
-    _eta(inp)
+    return _eta(inp)
