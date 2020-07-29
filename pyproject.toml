@@ -1,2 +1,48 @@
 [build-system]
 requires = ["setuptools", "wheel", "setuptools-rust"]
+
+[package.metadata.maturin]
+maintainer = "Timm Behner"
+maintainer-email = "timm.behner@fkie.fraunhofer.de"
+description = "A small wrapper around a rust entropy crate",
+long_description="""
+
+# rentropy
+A small wrapper around the rust [entropy crate](https://crates.io/crates/entropy) with [PyO3](https://github.com/PyO3/pyo3).
+
+## Usage
+
+```
+    import rentropy
+    rentropy.eta(b"Hello, world!")
+```
+
+calculates the [Shannon entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of `b"Hello, world!"`.
+
+## Setup
+```
+    pip install rentropy
+```
+
+## Build
+Use [just](https://crates.io/crates/just) to build wheels for CPython 3.5, 3.6, 3.7 and 3.8 with manylinux.
+
+```
+    make build
+```
+"""
+
+url="https://github.com/tbehner/rentropy",
+long_description_content_type="text/markdown",
+classifier = [
+        "Programming Language :: Python",
+        "Programming Language :: Rust",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "Topic :: Utilities",
+        ]
+
